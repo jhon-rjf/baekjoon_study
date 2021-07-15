@@ -1,0 +1,17 @@
+[33mcommit 2b02a0b29598a791f2e6c4c3150023894224c807[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: jhon-rjf <ykjung0917@kakao.com>
+Date:   Wed Jul 14 17:31:19 2021 +0900
+
+    12~13 2단계
+
+[33mcommit ab2c0d46cd084fed93c5e69178890f2ba3c8b5b2[m
+Author: jhon-rjf <ykjung0917@kakao.com>
+Date:   Mon Jul 12 14:57:20 2021 +0900
+
+    210712 first study
+
+[33mcommit 6f9686030cb431fc6363fcc3b1a288e4731a92e7[m
+Author: jhon-rjf <ykjung0917@kakao.com>
+Date:   Mon Jul 12 14:55:17 2021 +0900
+
+    first commit
