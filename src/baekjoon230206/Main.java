@@ -35,7 +35,7 @@ public class Main{
                                  
                             //    System.out.println("sum2 "+sum);
                                 System.out.println("   5 a "+a);
-                            }else if (O[z].equals(OO)){
+                            }else if (O[z].equals(OO)&&a>1){
                              sum = sum+1;
                               System.out.println("   6sum2 "+sum);
                                 a = 1;
