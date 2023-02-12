@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.Arrays;
+import java.io.IOException;
 public class Main{
 
 public Main(int Count,String ox)
@@ -27,6 +28,7 @@ String [] func()
     }
 
 String in(){
+    System.out.println("Scanner?");
      Scanner sc = new Scanner(System.in);  
      this.scan = sc.next();
      return this.scan;
@@ -65,9 +67,13 @@ int calc()
     public static void main(String[] args) throws IOException{
     //   Scanner sc = new Scanner(System.in);  
       //System.out.println("몇번이나?");
-      int Counta = Integer.parseInt(obj.in());
-      Main obj = new Main (Counta);
       
+      Main obj =new Main (Counta, ox);
+      int Counta = 0 ;
+      Counta = Integer.parseInt(obj.in());
+      String ox ;
+      ox = obj.in();
+      obj = new Main ();
       for(int i =0; i<Counta;i++){
         String prt = Arrays.toString(obj.func());
      //   System.out.println(prt);
