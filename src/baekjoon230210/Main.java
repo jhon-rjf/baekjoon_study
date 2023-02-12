@@ -2,19 +2,21 @@ import java.util.Scanner;
 import java.util.Arrays;
 public class Main{
 
-public Main(int Count)
+public Main(int Count,String ox)
     
     {
     this.Count = Count; //this 는 이 Main클래스 속의 a에 넣겠다는것.
+    this.ox = ox;
     }
 
 String [] func()
     {
         
         
-           Scanner sc = new Scanner(System.in);
+        //    Scanner sc = new Scanner(System.in);
            // System.out.println("OX값");
-            String ox = sc.next();
+            // String ox = sc.next();
+            String ox = this.ox;
             this.strlength = ox.length();
            this.O = new String[strlength];
             this.O = ox.split("");
@@ -23,6 +25,12 @@ String [] func()
     
         return this.O;
     }
+
+String in(){
+     Scanner sc = new Scanner(System.in);  
+     this.scan = sc.next();
+     return this.scan;
+}
 
 int calc()
     { 
@@ -52,11 +60,12 @@ int calc()
     int total;
     int sum;
     int temp;
-
-    public static void main(String[] args){
-      Scanner sc = new Scanner(System.in);  
+    String ox;
+    String scan;
+    public static void main(String[] args) throws IOException{
+    //   Scanner sc = new Scanner(System.in);  
       //System.out.println("몇번이나?");
-      int Counta = sc.nextInt();
+      int Counta = Integer.parseInt(obj.in());
       Main obj = new Main (Counta);
       
       for(int i =0; i<Counta;i++){
