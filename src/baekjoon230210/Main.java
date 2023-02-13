@@ -3,9 +3,10 @@ import java.util.Arrays;
 import java.io.IOException;
 public class Main{
 
-public Main(int Count,String ox)
+public Main(boolean temp,int Count,String ox)
     
     {
+     temp = temp;
     this.Count = Count; //this 는 이 Main클래스 속의 a에 넣겠다는것.
     this.ox = ox;
     }
@@ -67,13 +68,13 @@ int calc()
     public static void main(String[] args) throws IOException{
     //   Scanner sc = new Scanner(System.in);  
       //System.out.println("몇번이나?");
-      
-      Main obj =new Main (Counta, ox);
+      boolean temp = 1>0;
+      Main obj =new Main (temp);
       int Counta = 0 ;
       Counta = Integer.parseInt(obj.in());
       String ox ;
       ox = obj.in();
-      obj = new Main ();
+     obj =new Main (temp, Counta, ox);
       for(int i =0; i<Counta;i++){
         String prt = Arrays.toString(obj.func());
      //   System.out.println(prt);
