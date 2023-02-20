@@ -16,6 +16,7 @@ String Scan(){
     System.out.println("Scanner?");
     Scanner sc = new Scanner(System.in);
     this.Scan = sc.next();
+    
     return this.Scan;
 }
 int func(String temp){
