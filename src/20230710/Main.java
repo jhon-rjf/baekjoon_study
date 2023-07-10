@@ -1,4 +1,5 @@
 public class Main{
+ //1번
     public static void main(String[] args) {
 
         int i;
