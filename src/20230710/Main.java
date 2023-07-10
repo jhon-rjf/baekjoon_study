@@ -1,16 +1,26 @@
+Class Circle{
+int radius ;
+String color ;
 
-public class Main{
- //3번
-    public static void main(String[] args) {
-for(int i=1; i<7; i++){
-    for(int o = 1; o<7; o++){
-        int tot = i + o;
-        if (tot == 6){
-            System.out.print( "(" +i +"," +o +")" +" , ");
-        }
-    }
-
+double calcArea() {
+    return 3.14 * radius * radius;
 }
+}
+
+public class CircleTest {
+    public static void main(String[] args){
+        Circle obj = new Circle();
+        Circle objt = new Circle();
+        obj.radius = 100;
+        obj.color = blue;
+        objt.radius=110;
+        objt.color = red;
+        double objarea = obj.calcArea();
+        double objtarea = objt.calcArea();
+        System.out.println("1원의면적" + objarea);
+        System.out.println("1원의 색"+obj.color);
+        System.out.println("2원의면적"+ objtarea);
+        System.out.println("2원의 색"+objt.color);
 
     }
 }
